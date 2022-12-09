@@ -1,4 +1,4 @@
-module "tfc_deployment_role_lab_kehe" {
+module "tfc_deployment_role_lab" {
   source = "./modules/scalr-deployment-role"
 
   role_name              = "scalr-deployment"
