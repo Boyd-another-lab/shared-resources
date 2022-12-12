@@ -13,7 +13,7 @@ resource "aws_iam_role" "role" {
      stage   = var.stage
    }
 
-  permissions_boundary = local.boundary_arn
+  # permissions_boundary = var.boundary_arn #need to add to var and role
 }
 
 resource "aws_iam_role_policy_attachment" "iam_attachment" {
