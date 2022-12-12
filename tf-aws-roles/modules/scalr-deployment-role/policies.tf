@@ -4,7 +4,7 @@ data "aws_iam_policy_document" "assume_role_policy_document" {
 
     principals {
       type        = "AWS"
-      identifiers = [scalr_trusted_role_arn]
+      identifiers = [var.scalr_trusted_role_arn]
     }
 
     condition {
