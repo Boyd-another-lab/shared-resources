@@ -18,7 +18,7 @@ terraform {
 }
 locals {
 # boundary_arn              = "some_boundary"
- scalr_trusted_role_arn    = ""
+ scalr_trusted_role_arn    = "-"
  #
    aws_account_id_scalr = 919814621061
    aws_account_id_lab   = 340526426765

@@ -7,7 +7,7 @@ module "tfc_deployment_role_lab" {
 
 
    product      = "infrastructure"
-   service      = "terraform-cloud"
+   service      = "terraform-scalr"
    stage        = "prod"
   #                 boundary_arn = "arn:aws:iam::${local.aws_account_id_lab}:policy/Boundary_EngResearch"
 }
