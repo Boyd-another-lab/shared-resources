@@ -6,12 +6,12 @@ resource "aws_iam_role" "role" {
   #removes manually added inline policies
   inline_policy {}
 
-#   tags = {
-#     name    = var.role_name
-#     product = var.product
-#     service = var.service
-#     stage   = var.stage
-#   }
+   tags = {
+     name    = var.role_name
+     product = var.product
+     service = var.service
+     stage   = var.stage
+   }
 
   permissions_boundary = local.boundary_arn
 }
