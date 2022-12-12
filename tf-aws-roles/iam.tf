@@ -6,9 +6,9 @@ module "tfc_deployment_role_lab" {
   external_id            = "7s69Su5fAeYIBJSw"
 
 
-  # product      = "infrastructure"
-  # service      = "terraform-cloud"
-  # stage        = "prod"
+   product      = "infrastructure"
+   service      = "terraform-cloud"
+   stage        = "prod"
   #                 boundary_arn = "arn:aws:iam::${local.aws_account_id_lab}:policy/Boundary_EngResearch"
 }
 
