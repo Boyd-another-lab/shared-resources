@@ -107,7 +107,10 @@ data "aws_iam_policy_document" "cog_policy_document" {
   statement {
     actions = [
       "ses:VerifyDomainIdentity",
+      "ses:GetIdentityMailFromDomainAttributes",
       "ses:GetIdentityVerificationAttributes",
+      "ses:GetIdentityDkimAttributes",
+      "cognito-idp:DescribeUserPool",
       "cognito-idp:CreateUserPool",
       "idp:DescribeUserPool"
     ]
