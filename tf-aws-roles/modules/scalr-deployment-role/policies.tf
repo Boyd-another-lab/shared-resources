@@ -116,7 +116,9 @@ data "aws_iam_policy_document" "cog_policy_document" {
       "cognito-idp:DescribeUserPoolDomain",
       "cognito-idp:GetUserPoolMfaConfig",
       "cognito-idp:DeleteUserPool",
-      "idp:DescribeUserPool"
+      "idp:DescribeUserPool",
+      "idp:CreateUserPoolClient",
+      "idp:CreateUserPoolDomain"
     ]
 
     resources = [
