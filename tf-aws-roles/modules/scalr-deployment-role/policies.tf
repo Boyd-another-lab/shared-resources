@@ -107,7 +107,9 @@ data "aws_iam_policy_document" "cog_policy_document" {
   statement {
     actions = [
       "ses:VerifyDomainIdentity",
-      "cognito-idp:CreateUserPool"
+      "ses:GetIdentityVerificationAttributes",
+      "cognito-idp:CreateUserPool",
+      "idp:DescribeUserPool"
     ]
 
     resources = [
