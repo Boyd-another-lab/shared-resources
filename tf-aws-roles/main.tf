@@ -32,4 +32,5 @@ provider "aws" {
       managed-by = "aws-lab-shared-resources"
     }
   }
+ # alias = "aws-ca-central"
 }

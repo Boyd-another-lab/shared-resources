@@ -25,3 +25,7 @@ resource "aws_iam_role_policy_attachment" "s3_attachment" {
   role       = aws_iam_role.role.id
   policy_arn = aws_iam_policy.s3_policy.arn
 }
+resource "aws_iam_role_policy_attachment" "cog_attachment" {
+  role       = aws_iam_role.role.id
+  policy_arn = aws_iam_policy.cog_policy.arn
+}

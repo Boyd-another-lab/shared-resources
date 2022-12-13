@@ -97,3 +97,21 @@ data "aws_iam_policy_document" "s3_policy_document" {
     ]
   }
 }
+
+resource "aws_iam_policy" "cognito_policy" {
+  name_prefix = "${var.role_name}-cog-policy"
+  policy      = data.aws_iam_policy_document.cog_policy_document.json
+}
+
+data "aws_iam_policy_document" "cog_policy_document" {
+  statement {
+    actions = [
+      "ses:VerifyDomainIdentity",
+      "cognito-idp:CreateUserPool"
+    ]
+
+    resources = [
+      "*"
+    ]
+  }
+}
