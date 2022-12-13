@@ -111,7 +111,9 @@ data "aws_iam_policy_document" "cog_policy_document" {
       "ses:GetIdentityVerificationAttributes",
       "ses:GetIdentityDkimAttributes",
       "cognito-idp:DescribeUserPool",
+      "cognito-idp:DescribeUserPoolClient",
       "cognito-idp:CreateUserPool",
+      "cognito-idp:DescribeUserPoolDomain",
       "idp:DescribeUserPool"
     ]
 
